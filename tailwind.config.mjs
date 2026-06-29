@@ -1,0 +1,52 @@
+export default {
+  content: [
+    "./index.html",
+    "./src/App.tsx",
+    "./src/main.tsx",
+    "./src/components/ButtonLink.tsx",
+    "./src/components/ContactForm.tsx",
+    "./src/components/CredibilitySection.tsx",
+    "./src/components/CTASection.tsx",
+    "./src/components/Header.tsx",
+    "./src/components/Hero.tsx",
+    "./src/components/LandingFooter.tsx",
+    "./src/components/LocalAreaSection.tsx",
+    "./src/components/PackagesSection.tsx",
+    "./src/components/ProblemSection.tsx",
+    "./src/components/SectionHeading.tsx",
+    "./src/components/ServicesSection.tsx",
+    "./src/components/WhyItMatters.tsx",
+    "./src/data/**/*.{ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        charcoal: "#162022",
+        ink: "#243234",
+        mist: "#e7eeee",
+        foam: "#f8f5ef",
+        paper: "#fffdf8",
+        sand: "#d9cbb6",
+        dune: "#bca98d",
+        tide: "#5f7f86",
+        kelp: "#6f7d64",
+        clay: "#a8664f",
+      },
+      fontFamily: {
+        sans: [
+          "Inter",
+          "ui-sans-serif",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "sans-serif",
+        ],
+      },
+      boxShadow: {
+        soft: "0 20px 70px rgba(22, 32, 34, 0.10)",
+      },
+    },
+  },
+  plugins: [],
+};
