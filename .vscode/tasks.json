@@ -4,11 +4,16 @@
     {
       "label": "Push update",
       "type": "shell",
-      "command": "git pull --rebase origin main; if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }; git add .; git commit -m \"${input:commitMessage}\"; if ($LASTEXITCODE -eq 0) { git push origin main } else { git status }",
+      "command": "$msg = '${input:commitMessage}'; git status; git add -A; git diff --cached --quiet; if ($LASTEXITCODE -eq 0) { Write-Host 'No changes to commit.' } else { git commit -m $msg; if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE } }; git pull --rebase origin main; if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }; git push origin main",
       "options": {
         "shell": {
           "executable": "powershell.exe",
-          "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-Command"]
+          "args": [
+            "-NoProfile",
+            "-ExecutionPolicy",
+            "Bypass",
+            "-Command"
+          ]
         }
       },
       "problemMatcher": []
@@ -22,4 +27,4 @@
       "default": "Update site"
     }
   ]
-} 
+}

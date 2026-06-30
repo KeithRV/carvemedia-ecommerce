@@ -14,7 +14,7 @@ export function Hero() {
       className="relative isolate overflow-hidden bg-charcoal text-white"
     >
       <img
-        src="/images/hero-background.webp"
+        src="/images/hero-background.png"
         alt="Coastal workspace with laptop showing an online shop"
         className="absolute inset-0 h-full w-full object-cover"
         fetchPriority="high"
