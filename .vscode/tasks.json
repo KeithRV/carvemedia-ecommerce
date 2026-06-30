@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Push update",
+      "type": "shell",
+      "command": "git pull --rebase origin main; if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }; git add .; git commit -m \"${input:commitMessage}\"; if ($LASTEXITCODE -eq 0) { git push origin main } else { git status }",
+      "options": {
+        "shell": {
+          "executable": "powershell.exe",
+          "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-Command"]
+        }
+      },
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "commitMessage",
+      "type": "promptString",
+      "description": "Commit message",
+      "default": "Update site"
+    }
+  ]
+} 

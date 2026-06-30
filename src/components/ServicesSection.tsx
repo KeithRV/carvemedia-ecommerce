@@ -16,7 +16,7 @@ const serviceLabels = [
 
 export function ServicesSection() {
   const [expandedService, setExpandedService] = useState<string | null>(
-    "service-detail-0",
+    null,
   );
 
   return (
