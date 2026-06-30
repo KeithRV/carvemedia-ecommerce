@@ -29,34 +29,59 @@ export function LandingFooter() {
 
       <div className="relative mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[1fr_0.55fr_0.45fr] lg:items-start">
-          <div>
-            <a href="#top" className="inline-flex items-center">
-              <img
-                src="/images/CMCee.png"
-                alt="CarvemediA eCommerce"
-                className="h-12 w-auto"
-              />
-            </a>
+          <div className="grid gap-8 md:grid-cols-[minmax(0,1fr)_10rem] md:items-start lg:gap-10">
+            <div>
+              <a href="#top" className="inline-flex items-center">
+                <img
+                  src="/images/CMCee.png"
+                  alt="CarvemediA eCommerce"
+                  className="h-12 w-auto"
+                />
+              </a>
 
-            <p className="mt-5 max-w-xl text-lg font-semibold leading-8 text-white">
-              eCommerce · Local online store support
-            </p>
+              <p className="mt-5 max-w-xl text-lg font-semibold leading-8 text-white">
+                eCommerce · Local online store support
+              </p>
 
-            <p className="mt-4 max-w-2xl text-base leading-8 text-white/68">
-              Local Shopify, eCommerce, product SEO, agentic workflow and online
-              store support for businesses across the southern Mornington
-              Peninsula.
-            </p>
+              <p className="mt-4 max-w-2xl text-base leading-8 text-white/68">
+                Local Shopify, eCommerce, product SEO, agentic workflow and
+                online store support for businesses across the southern
+                Mornington Peninsula.
+              </p>
 
-            <div className="mt-7 flex flex-wrap gap-2">
-              {serviceAreas.map((area) => (
-                <span
-                  key={area}
-                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-bold uppercase tracking-[0.16em] text-mist"
-                >
-                  {area}
-                </span>
-              ))}
+              <div className="mt-7 flex flex-wrap gap-2">
+                {serviceAreas.map((area) => (
+                  <span
+                    key={area}
+                    className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-bold uppercase tracking-[0.16em] text-mist"
+                  >
+                    {area}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="flex md:justify-end">
+              <div className="group relative w-36 overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-2 shadow-2xl shadow-black/20 backdrop-blur sm:w-40">
+                <div
+                  className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-tide/20 via-white/5 to-sand/10 opacity-80"
+                  aria-hidden="true"
+                />
+
+                <div className="relative overflow-hidden rounded-[1.55rem] border border-white/10 bg-charcoal">
+                  <img
+                    src="/images/KVsnowFACE.jpg"
+                    alt="CarvemediA eCommerce self portrait"
+                    className="aspect-[4/5] h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+
+                <p className="relative mt-3 px-1 pb-1 text-center text-[0.68rem] font-bold uppercase tracking-[0.18em] text-white/55">
+                  Local Support
+                </p>
+              </div>
             </div>
           </div>
 
