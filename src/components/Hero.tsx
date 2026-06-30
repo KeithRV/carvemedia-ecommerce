@@ -59,7 +59,7 @@ export function Hero() {
           </p>
 
           <p className="mt-5 max-w-2xl text-base leading-8 text-white/78">
-            CarveCommerce helps local businesses clean up their online
+            Carv'eCommerce helps local businesses clean up their online
             store, sharpen product presentation, improve search visibility, and
             make the digital side of the business easier to run.
           </p>

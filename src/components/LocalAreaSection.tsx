@@ -66,7 +66,7 @@ export function LocalAreaSection() {
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-white/75">
               <strong className="font-semibold text-white">
-                CarvemediA eCommerce
+                Carv'eCommerce
               </strong>{" "}
               works with local businesses across Rosebud, Capel Sound,
               Tootgarook, Rye, Blairgowrie, Sorrento, Portsea and the broader

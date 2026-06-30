@@ -40,7 +40,7 @@ export function LandingFooter() {
               </a>
 
               <p className="mt-5 max-w-xl text-lg font-semibold leading-8 text-white">
-                eCommerce · Local online store support
+                Carv'eCommerce · Local online store support
               </p>
 
               <p className="mt-4 max-w-2xl text-base leading-8 text-white/68">
@@ -132,7 +132,7 @@ export function LandingFooter() {
 
         <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-white/50 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {new Date().getFullYear()} CarvemediA eCommerce. All rights
+            © {new Date().getFullYear()} Carv'eCommerce. All rights
             reserved.
           </p>
 
