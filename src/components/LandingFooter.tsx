@@ -33,7 +33,7 @@ export function LandingFooter() {
             <div>
               <a href="#top" className="inline-flex items-center">
                 <img
-                  src="/images/cm-title.png"
+                  src="/images/carvecommerce.png"
                   alt="CarvemediA eCommerce"
                   className="h-12 w-auto"
                 />
