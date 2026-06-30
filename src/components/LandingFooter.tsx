@@ -85,10 +85,10 @@ export function LandingFooter() {
 
             <div className="mt-5 grid gap-4 text-base leading-7">
               <a
-                href="mailto:hello@carvemedia.com.au"
+                href="mailto:ecomm@carvemedia.com.au"
                 className="text-white/72 transition hover:text-white"
               >
-                hello@carvemedia.com.au
+                ecomm@carvemedia.com.au
               </a>
 
               <a
