@@ -100,10 +100,10 @@ export function ContactForm() {
                 Email
               </p>
               <a
-                href="mailto:hello@carvemedia.com.au"
+                href="mailto:ecomm@carvemedia.com.au"
                 className="mt-2 block text-lg font-semibold text-charcoal transition hover:text-tide"
               >
-                hello@carvemedia.com.au
+                ecomm@carvemedia.com.au
               </a>
             </div>
 
