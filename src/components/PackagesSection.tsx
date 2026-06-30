@@ -1,5 +1,5 @@
 import { packages } from "../data/content";
-import { ButtonLink } from "./ButtonLink";
+import { OngoingDigitalManagementCard } from "./OngoingDigitalManagementCard";
 import { SectionHeading } from "./SectionHeading";
 
 export function PackagesSection() {
@@ -13,6 +13,7 @@ export function PackagesSection() {
         className="absolute left-0 top-20 h-80 w-80 rounded-full bg-sand/25 blur-3xl"
         aria-hidden="true"
       />
+
       <div
         className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-tide/10 blur-3xl"
         aria-hidden="true"
@@ -106,29 +107,36 @@ export function PackagesSection() {
                         }`}
                         aria-hidden="true"
                       />
+
                       <span>{include}</span>
                     </li>
                   ))}
                 </ul>
 
                 <div className="mt-9">
-                  <ButtonLink
+                  <a
                     href="#contact"
-                    variant={featured ? "light" : "dark"}
-                    className="w-full justify-center"
+                    className={`inline-flex w-full items-center justify-center rounded-none border px-5 py-3 text-sm font-semibold transition duration-300 ${
+                      featured
+                        ? "border-white bg-white text-charcoal hover:bg-foam"
+                        : "border-charcoal/10 bg-charcoal text-white hover:bg-tide"
+                    }`}
                   >
                     {item.cta}
-                  </ButtonLink>
+                  </a>
                 </div>
               </article>
             );
           })}
         </div>
 
+        <OngoingDigitalManagementCard />
+
         <div className="mt-8 max-w-3xl rounded-3xl border border-charcoal/10 bg-paper p-6 text-base leading-8 text-charcoal/70 shadow-sm">
           Custom support is available for businesses that need ongoing product
-          uploads, Shopify maintenance, marketplace help, digital content
-          support, or agentic workflow setup.
+          uploads, Shopify maintenance, marketplace help, content creation,
+          social media support, YouTube updates, SEO improvements, or practical
+          digital workflow management.
         </div>
       </div>
     </section>
